@@ -16,7 +16,7 @@ public class UserDaoImpl implements UserDao {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 
-	@Override
+	@Overridesdfsfsd
 	public void userJoinProcess(User user) {
 		sqlSession.insert(NAME_SPACE + ".userJoinProcess", user);
 	}

@@ -8,7 +8,8 @@ public interface StoreDao {
 	public abstract void storeInsert(Store store);
 	public abstract Store getStore(int storeNo);
 	public abstract List<Store> getStoreList(String comId,int mainCat);
-	
+	sdfdsfsdf
 
 	
 }
+dfsdfsdfsdf

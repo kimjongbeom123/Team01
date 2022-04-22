@@ -14,19 +14,5 @@ import com.spring.baemin.domain.Product;
 public class ProductDaoImpl implements ProductDao {
 	
 	private final String NAME_SPACE = "com.spring.baemin.mapper.ProductMapper";
-	@Autowired
-	private SqlSessionTemplate sqlSession; 
-	
-	@Override
-	public void productInsert(Product product) {		
-		sqlSession.selectOne(NAME_SPACE + ".productInsert", product);
-	}
-
-	@Override
-	public List<Product> getProductList(int storeNo) {
-		Map<String, Object> mapModel = new HashMap<String, Object>();
-		mapModel.put("storeNo", storeNo);
-		return sqlSession.selectList(NAME_SPACE + ".getProductList", storeNo);
-	}
-
+	@Autowiredd
 }
